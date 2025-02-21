@@ -11,7 +11,7 @@ cd Libft
 ```sh
 make
 ``` 
-Si deseas compilar la librería con las funciones adicionales de listas enlazadas, ejecuta:
+Si deseas compilar el bonus:
 ```sh
 make bonus 
 ``` 
