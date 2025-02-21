@@ -5,6 +5,8 @@ Desarrollar la Libft supone gestionar la memoria, las cadenas y las estructuras 
 ## 📥 Clonación del repositorio
 ```sh
 git clone https://github.com/Daniel-Escamilla/Libft.git
+```
+```sh
 cd Libft
 ```
 ## ⚙️ Compilación
