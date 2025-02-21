@@ -3,35 +3,31 @@
 Desarrollar la Libft supone gestionar la memoria, las cadenas y las estructuras dinámicas. Este proyecto refuerza la comprensión de técnicas de asignación y liberación de memoria, además de la manipulación de datos. Así se establece una base que facilita la resolución de problemas complejos en el futuro.
 
 ## 📥 Clonación del repositorio
-Para obtener una copia local del repositorio, ejecuta el siguiente comando:
 ```sh
 git clone https://github.com/Daniel-Escamilla/Libft.git
 cd Libft
 ```
 ## ⚙️ Compilación
-Para compilar la librería y generar el archivo `libft.a`, usa el siguiente comando: 
 ```sh
 make
 ``` 
-Esto generará los archivos objeto y creará la librería estática `libft.a`.
-Si deseas compilar la librería con las funciones adicionales de listas enlazadas, ejecuta: ```sh make bonus ``` 
+Si deseas compilar la librería con las funciones adicionales de listas enlazadas, ejecuta:
+```sh
+make bonus 
+``` 
 ## 🛠️ Flags del Makefile
-El Makefile incluye varias reglas para gestionar la compilación:
 - `make` → Compila la librería principal. 
 - `make bonus` → Compila la librería incluyendo las funciones adicionales de listas enlazadas.
 - `make clean` → Elimina los archivos objeto generados.
 - `make fclean` → Elimina los archivos objeto y la librería compilada `libft.a`.
 - `make re` → Ejecuta `fclean` y luego `make`, recompilando todo desde cero.
 ## 🚀 Uso de la librería
-Para usar `libft.a` en tu propio proyecto, incluye su cabecera y compila tu código con la librería:
 ```c 
 #include "libft.h"
 ``` 
-Ejemplo de compilación con `gcc`: 
 ```sh 
 gcc main.c -L. -lft -o programa 
 ``` 
-donde `main.c` es tu archivo principal y `libft.a` debe estar en el mismo directorio o en un path accesible para el compilador.
 ## 📌 Notas adicionales
 - La librería usa `gcc` como compilador con las flags `-Wall -Wextra -Werror` para asegurar una compilación estricta.
 - Se recomienda revisar la documentación de cada función en `libft.h` para conocer su uso y parámetros.
